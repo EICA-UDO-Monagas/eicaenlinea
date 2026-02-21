@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-eica-primary: #0A4DA6;
+  --color-eica-secondary: #0A5DA6;
+  --color-eica-dark: #0A4273;
+  --color-eica-deep: #143959;
+  --color-eica-light: #F2F2F2;
+}

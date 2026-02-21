@@ -12,6 +12,16 @@
 - **[Vite](https://vitejs.dev/)** (Herramienta de compilación web)
 - **[Tailwind CSS](https://tailwindcss.com/)** (Framework CSS)
 
+## 🎨 Paleta de Colores
+
+El diseño del portal web institucional utiliza la siguiente paleta gráfica basada en la identidad de la EICA:
+
+- **EICA Primary**: `#0A4DA6` (Azul principal)
+- **EICA Secondary**: `#0A5DA6` (Variante azul brillante)
+- **EICA Dark**: `#0A4273` (Azul oscuro para fondos y énfasis)
+- **EICA Deep**: `#143959` (Azul profundo/marino)
+- **EICA Light**: `#F2F2F2` (Gris claro para fondos neutros)
+
 ## 🛠️ Requisitos Previos
 
 Antes de comenzar a contribuir, asegúrate de tener instalado:
