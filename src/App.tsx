@@ -2,8 +2,8 @@ import './App.css'
 
 function App() {
   return (
-    <div className="min-h-screen bg-eica-deep flex flex-col items-center justify-center p-4">
-      <div className="max-w-4xl w-full bg-eica-dark rounded-3xl shadow-2xl p-10 md:p-16 text-center border border-eica-primary relative overflow-hidden">
+    <div className="min-h-screen bg-eica-light flex flex-col items-center justify-center p-4">
+      <div className="max-w-4xl w-full bg-eica-dark rounded-2xl md:rounded-3xl shadow-2xl p-6 sm:p-10 md:p-16 text-center border border-eica-primary relative overflow-hidden">
 
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-eica-primary via-eica-secondary to-eica-primary"></div>
@@ -17,16 +17,16 @@ function App() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold text-eica-light mb-6 drop-shadow-md">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-eica-light mb-4 sm:mb-6 drop-shadow-md">
             Próximamente
           </h1>
 
-          <p className="text-xl md:text-2xl text-eica-light/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-eica-light/90 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
             Estamos construyendo el nuevo Portal Web de la <strong className="text-white">Escuela de Ingeniería y Ciencias Aplicadas (EICA)</strong> de la Universidad de Oriente, Núcleo Monagas.
           </p>
 
-          <div className="pt-10 border-t border-eica-primary/30">
-            <p className="text-sm uppercase tracking-widest text-eica-light/70 font-semibold mb-6">
+          <div className="pt-8 sm:pt-10 border-t border-eica-primary/30">
+            <p className="text-xs sm:text-sm uppercase tracking-widest text-eica-light/70 font-semibold mb-6">
               Mantente informado en nuestras redes
             </p>
 
