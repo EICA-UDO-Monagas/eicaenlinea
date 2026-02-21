@@ -1,73 +1,104 @@
-# React + TypeScript + Vite
+# 🎓 Portal Web de la EICA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Estado: Activo](https://img.shields.io/badge/Estado-Activo-blue)
+![Contribuciones: Bienvenidas](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen)
 
-Currently, two official plugins are available:
+¡Bienvenido/a al repositorio oficial de la página web de la **Escuela de Ingeniería y Ciencias Aplicadas (EICA)** de la **Universidad de Oriente (UDO), Núcleo Monagas, Venezuela**! Este proyecto de código abierto tiene como propósito ser el rostro digital de la escuela, ofreciendo información relevante para estudiantes, profesores y el público en general.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías Utilizadas
 
-## React Compiler
+- **[React](https://reactjs.org/)** (Librería UI)
+- **[TypeScript](https://www.typescriptlang.org/)** (Tipado estático)
+- **[Vite](https://vitejs.dev/)** (Herramienta de compilación web)
+- **[Tailwind CSS](https://tailwindcss.com/)** (Framework CSS)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Requisitos Previos
 
-## Expanding the ESLint configuration
+Antes de comenzar a contribuir, asegúrate de tener instalado:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **[Git](https://git-scm.com/downloads)** (Para control de versiones)
+- **[Node.js](https://nodejs.org/)** (Entorno de ejecución)
+- Un editor de código de tu preferencia, recomendamos **[VS Code](https://code.visualstudio.com/)**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🤝 Cómo Contribuir al Proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+¡Nos encanta recibir contribuciones de la comunidad estudiantil y desarrolladores externos! Para agregar nuevas funcionalidades, corregir errores o mejorar la documentación, sigue estos pasos:
+
+### 1. Haz un "Fork" del repositorio
+Un *Fork* es una copia de este proyecto en tu propia cuenta de GitHub, lo que te permite hacer cambios libremente sin afectar la página en vivo de la escuela.
+
+- Ve a la esquina superior derecha de esta página y haz clic en el botón **Fork**.
+
+### 2. Clona el repositorio a tu computadora
+Una vez que tengas el fork en tu cuenta, debes descargarlo a tu equipo local.
+
+```bash
+# Cambia "TU_USUARIO" por tu nombre de usuario de GitHub
+git clone https://github.com/TU_USUARIO/eicaenlinea.git
+
+# Entra a la carpeta del proyecto
+cd eicaenlinea
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Configura el repositorio original (Upstream)
+Para asegurarte de que tu código siempre esté actualizado con los cambios oficiales de la escuela, añade este repositorio como "upstream".
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Añade el enlace original del repositorio de la organización (EICA-UDO-Monagas)
+git remote add upstream https://github.com/EICA-UDO-Monagas/eicaenlinea.git
 ```
+
+### 4. Crea una nueva rama (Branch)
+**Nunca** hagas cambios directamente en la rama principal (`main` o `master`). Crea una rama con un nombre descriptivo para tu trabajo.
+
+```bash
+git checkout -b mi-nueva-caracteristica
+# Ejemplo: git checkout -b mejorar-cabecera
+```
+
+### 5. Realiza tus cambios y guárdalos (Commit)
+Trabaja en el código. Cuando estés listo para guardar, agrega los archivos y haz un commit con un mensaje claro de lo que modificaste.
+
+```bash
+# Agregar todos los cambios
+git add .
+
+# Guardar los cambios con un mensaje
+git commit -m "feat: actualización del banner de admisiones 2026"
+```
+
+### 6. Sincroniza con el proyecto original
+Antes de enviar tu trabajo, asegúrate de traer cualquier cambio que otros hayan hecho mientras tú programabas.
+
+```bash
+git fetch upstream
+git rebase upstream/main
+```
+
+### 7. Sube los cambios a tu GitHub (Push)
+Envía la rama con tus modificaciones a tu cuenta de GitHub.
+
+```bash
+git push origin mi-nueva-caracteristica
+```
+
+### 8. Abre un Pull Request (PR)
+1. Ve a tu repositorio en GitHub.
+2. GitHub detectará tus cambios y mostrará un botón verde que dice **Compare & pull request** (Comparar y solicitar fusión). Haz clic ahí.
+3. Explica detalladamente qué problemas resolviste o qué característica agregaste.
+4. Envía el Pull Request y espera a que los mantenedores del proyecto revisen tu código. ¡Gracias por tu aporte! 🎉
+
+---
+
+## 🐛 Reportar Problemas (Issues)
+
+Si encuentras un enlace roto, un error de diseño, o tienes una sugerencia, por favor abre un **Issue** en la pestaña correspondiente de GitHub. Asegúrate de incluir:
+- Una descripción clara del problema.
+- Pasos para reproducirlo.
+- Capturas de pantalla (si aplica).
+
+## 📄 Licencia
+
+Este proyecto está distribuido bajo la licencia *(📝 Nombre de tu licencia, ej: MIT, GPL-3.0)*. Revisa el archivo `LICENSE` para más información.
