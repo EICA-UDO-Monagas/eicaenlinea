@@ -20,6 +20,29 @@ Antes de comenzar a contribuir, asegúrate de tener instalado:
 - **[Node.js](https://nodejs.org/)** (Entorno de ejecución)
 - Un editor de código de tu preferencia, recomendamos **[VS Code](https://code.visualstudio.com/)**
 
+## ⚙️ Instalación y Desarrollo Local
+
+Para correr este proyecto en tu entorno local, sigue los siguientes pasos:
+
+1. **Clona tu repositorio** (preferiblemente de tu Fork, ver sección de Contribuciones abajo):
+   ```bash
+   git clone https://github.com/TU_USUARIO/eicaenlinea.git
+   cd eicaenlinea
+   ```
+
+2. **Instala las dependencias**:
+   Para descargar todas las librerías necesarias del proyecto ejecuta:
+   ```bash
+   npm install
+   ```
+
+3. **Inicia el servidor de desarrollo**:
+   Levanta el proyecto localmente con el siguiente comando:
+   ```bash
+   npm run dev
+   ```
+   Esto iniciará Vite y usualmente podrás ver la página abriendo tu navegador en `http://localhost:5173/`. ¡Cualquier cambio que guardes en el código se reflejará instantáneamente gracias al Hot Module Replacement (HMR)!
+
 ---
 
 ## 🤝 Cómo Contribuir al Proyecto
@@ -101,4 +124,4 @@ Si encuentras un enlace roto, un error de diseño, o tienes una sugerencia, por 
 
 ## 📄 Licencia
 
-Este proyecto está distribuido bajo la licencia *(📝 Nombre de tu licencia, ej: MIT, GPL-3.0)*. Revisa el archivo `LICENSE` para más información.
+Este proyecto está distribuido bajo la licencia **Apache License 2.0**. Revisa el archivo `LICENSE` para más información.
